@@ -78,7 +78,7 @@ a {
   color: #666;
   text-decoration: none;
 }
-a: {
+a:visited {
   color: none;
 }
 

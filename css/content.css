@@ -1,5 +1,4 @@
 .content {
-    background-color: transparent;
     flex-grow: 4;
     position: relative;
     margin: 0 150px;
@@ -19,6 +18,7 @@
 }
 .content1 {
     height: 100vh;
+    position: relative;
 }
 .con h2 {
     padding: 60px 0;
@@ -36,4 +36,33 @@ p {
 .travel img:hover {
     box-shadow: 0px 0px 20px black;
     transform: scale(1.5);
+}
+.anime {
+    position: absolute;
+}
+.content2 form {
+    margin: 10px auto;
+    margin-right: 10px;
+    display: inline-block;
+}
+.content4 .websets {
+
+    list-style: none ;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+}
+.content4 .websets li {
+    width: 120px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    /* background-color: orange;
+    border: 1px solid black; */
+}
+.content4 .websets li:hover {
+    font-weight: bold;
+    text-shadow: 0 0 1.5px rgba(0, 0, 0, 0.5);
 }
