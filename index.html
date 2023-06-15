@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="shortcut icon" href="./icon/a-zuhe226.png">
+    <title>Bruno's Website</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .container {
+            display: flex;
+        }
+        .anime {
+            width: 130px;
+            height: 130px;
+            background-image: url('./img/bike.png');
+            margin-top: 150px;
+            animation: bike 1s steps(31) infinite;
+        }
+        @keyframes bike {
+            0% {}
+            100% {
+                background-position: 0px -4030px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <header>
+        <a href="#ava">Bruno's Website</a>
+    </header>
+    <!-- 内容区 -->
+    <div class="container">
+        <!-- 左侧主导航栏 -->
+        <nav id="ava">
+            <!-- 上部头像区 -->
+            <!-- 欢迎语 -->
+            <div class="welcome">
+                <a href="#">Bruno's Website</a>
+            </div>
+            <!-- 头像图片 -->
+            <div class="avatar">
+                <img src="./img/batman1.png" alt="">
+            </div>
+            <!-- 导航区 -->
+            <ul>
+                <li><a href="#item1">主页</a></li>
+                <li><a href="#item2">工作</a></li>
+                <li><a href="#item3">随拍</a></li>
+                <li><a href="#item4">常用网站</a></li>
+                <li><a href="#item5">其他</a></li>
+            </ul>
+            <!-- 联系方式 -->
+            <div class="link">
+                <span style="color: #666; font-weight: bold;">联系方式</span>
+                <hr>
+                <ul>
+                    <li><a href="tel:18629032846">电话：<br>18629032846</a></li>
+                    <li><a href="mailto:bill_bridges@foxmail.com">邮箱：bill_bridges@foxmail.com</a></li>
+                    <li><a href="#">个人简历</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 右侧主内容区 -->
+        <div class="content">
+            <!-- 主页 -->
+            <div class="con content1">
+                <h2 id="item1">
+                    欢迎来到我的网站
+                </h2>
+                <p>一个不甘现状的人</p>
+                <p style="margin-top: 50px;">本来想学习sql进行资产管理，没想到学起了前端</p>
+                <div class="anime">
+
+                </div>
+            </div>
+            <!-- 工作 -->
+            <div class="con content2">
+                <h2 id="item2">
+                    工作
+                </h2>
+                <div>待完善..</div>
+            </div>
+            <!-- 旅行 -->
+            <div class="con content3">
+                <h2 id="item3">
+                    随拍
+                </h2>
+                <div class="travel">
+                    <img src="./img/pic/1.jpg" alt="">
+                    <img src="./img/pic/2.jpg" alt="">
+                    <img src="./img/pic/3.jpg" alt="">
+                    <img src="./img/pic/4.jpg" alt="">
+                    <img src="./img/pic/5.jpg" alt="">
+                    <img src="./img/pic/6.jpg" alt="">
+                    <img src="./img/pic/7.jpg" alt="">
+                    <img src="./img/pic/8.jpg" alt="">
+                    <img src="./img/pic/9.jpg" alt="">
+                    <img src="./img/pic/10.jpg" alt="">
+                    <img src="./img/pic/11.jpg" alt="">
+                    <img src="./img/pic/12.jpg" alt="">
+                </div>
+            </div>
+            <!-- 常用网站 -->
+            <div class="con content4">
+                <h2 id="item4">
+                    常用网站
+                </h2>
+                <div>待完善..</div>
+            </div>
+            <!-- 摩托 -->
+            <div class="con content5">
+                <h2 id="item5">
+                    其他
+                </h2>
+            </div>
+            <div class="icon">
+                <a href="#item1" class="top">
+                    <img src="./icon/a-zuhe227svg.png" alt="回到顶部">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
