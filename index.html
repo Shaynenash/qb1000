@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="shortcut icon" href="./icon/a-zuhe226.png">
+    <title>Bruno's Website</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+        }
+        .anime {
+            width: 130px;
+            height: 130px;
+            background-image: url('./img/bike.png');
+            margin-top: 180px;
+            animation: bike 1s steps(31) infinite, bike-go 10s linear infinite;
+        }
+        
+        @keyframes bike {
+            0% {}
+            100% {
+                background-position: 0px -4030px;
+            }
+        }
+        /* 从右到左 图片像素130px */
+        @keyframes bike-go {
+            0% {
+                right: 0;
+            }
+            100% {
+                right: 100%;
+                transform: translateX(130px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <header>
+        <a href="#ava">Bruno's Website</a>
+    </header>
+    <!-- 内容区 -->
+    <div class="container">
+        <!-- 左侧主导航栏 -->
+        <nav id="ava">
+            <!-- 上部头像区 -->
+            <!-- 欢迎语 -->
+            <div class="welcome">
+                <a href="#">Bruno's Website</a>
+            </div>
+            <!-- 头像图片 -->
+            <div class="avatar">
+                <img src="./img/batman1.png" alt="">
+            </div>
+            <!-- 导航区 -->
+            <ul>
+                <li><a href="#item1">主页</a></li>
+                <li><a href="#item2">工作</a></li>
+                <li><a href="#item3">随拍</a></li>
+                <li><a href="#item4">常用网站</a></li>
+                <li><a href="#item5">其他</a></li>
+            </ul>
+            <!-- 联系方式 -->
+            <div class="link">
+                <span style="color: #666; font-weight: bold;">联系方式</span>
+                <hr>
+                <ul>
+                    <li><a href="tel:18629032846">电话：<br>18629032846</a></li>
+                    <li><a href="mailto:bill_bridges@foxmail.com">邮箱：bill_bridges@foxmail.com</a></li>
+                    <li><a href="#">个人简历</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 右侧主内容区 -->
+        <div class="content">
+            <!-- 主页 -->
+            <div class="con content1">
+                <h2 id="item1">
+                    欢迎来到我的网站
+                </h2>
+                <p>不甘现状</p>
+                <p style="margin-top: 50px;">本来想学习sql进行资产管理，没想到学起了前端</p>
+                <div class="anime">
+                    <!-- 插入动画 -->
+                </div>
+            </div>
+            <!-- 工作 -->
+            <div class="con content2">
+                <h2 id="item2">
+                    工作
+                </h2>
+                <!-- 两个常用搜索框 百度和MDN -->
+                <div>
+                    <form action="https://www.baidu.com/s">
+                        <input type="text" name="wd" placeholder="百度一下">
+                        <button>百度</button>
+                    </form>
+                    <form action="https://developer.mozilla.org/zh-CN/search">
+                        <input type="text" name="q" placeholder="MDN Reference">
+                        <button style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">MDN</button>
+                    </form>
+                    <!-- 使用js完善重置功能 -->
+                    <input type="reset">
+                </div>
+            </div>
+            <!-- 旅行 -->
+            <div class="con content3">
+                <h2 id="item3">
+                    随拍
+                </h2>
+                <div class="travel">
+                    <img src="./img/pic/1.jpg" alt="">
+                    <img src="./img/pic/2.jpg" alt="">
+                    <img src="./img/pic/3.jpg" alt="">
+                    <img src="./img/pic/4.jpg" alt="">
+                    <img src="./img/pic/5.jpg" alt="">
+                    <img src="./img/pic/6.jpg" alt="">
+                    <img src="./img/pic/7.jpg" alt="">
+                    <img src="./img/pic/8.jpg" alt="">
+                    <img src="./img/pic/9.jpg" alt="">
+                    <img src="./img/pic/10.jpg" alt="">
+                    <img src="./img/pic/11.jpg" alt="">
+                    <img src="./img/pic/12.jpg" alt="">
+                </div>
+            </div>
+            <!-- 常用网站 -->
+            <div class="con content4">
+                <h2 id="item4">
+                    常用网站
+                </h2>
+                <div>
+                    <ul class="websets">
+                        <li>
+                            <a href="https://www.taobao.com/" target="_blank">淘宝</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jd.com/" target="_blank">京东</a>
+                        </li>
+                        <li>
+                            <a href="https://bbs.nga.cn/" target="_blank">NGA</a>
+                        </li>
+                        <li>
+                            <a href="https://www.wetools.com/" target="_blank">微工具</a>
+                        </li>
+                        <li>
+                            <a href="https://movie.douban.com/" target="_blank">豆瓣电影</a>
+                        </li>
+                        <li>
+                            <a href="https://subhd.tv/" target="_blank">SubHD</a>
+                        </li>
+                        <li>
+                            <a href="https://torrentgalaxy.mx/" target="_blank">TGx</a>
+                        </li>
+                        <li>
+                            <a href="https://nba.hupu.com/" target="_blank">虎扑NBA</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bilibili.com/" target="_blank">bilibili</a>
+                        </li>
+                        <li>
+                            <a href="https://chat.openai.com/chat" target="_blank">ChatGPT</a>
+                        </li>
+                        <li>
+                            <a href="https://sms-activate.org/cn" target="_blank">SMS-Active</a>
+                        </li>
+                        <li>
+                            <a href="https://www.midorg.com/" target="_blank">元岛</a>
+                        </li>
+                        <li>
+                            <a href="https://www.renren.pro/" target="_blank">人人PRO</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dongao.com/" target="_blank">东奥会计在线</a>
+                        </li>
+                        <li>
+                            <a href="https://cubic-bezier.com/" target="_blank">cubic-bezier</a>
+                        </li>
+                        <li>
+                            <a href="http://kzp.mof.gov.cn/" target="_blank">财政部</a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/" target="_blank">Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 其他 -->
+            <div class="con content5">
+                <h2 id="item5">
+                    其他
+                </h2>
+            </div>
+            <div class="icon">
+                <a href="#item1" class="top">
+                    <img src="./icon/a-zuhe227svg.png" alt="回到顶部">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

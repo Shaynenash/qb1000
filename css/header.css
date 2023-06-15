@@ -1,0 +1,22 @@
+header {
+    height: 100vh;
+    background-image: radial-gradient(at right top, rgb(43, 193, 252),rgb(103, 250, 176));    
+    text-align: center;
+    font-size: 5vh;
+    line-height: 100vh;
+    font-weight: bold;
+}
+header a {
+    transition: 1s ease;
+    text-decoration: underline rgba(185, 185, 185,.5);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+header a:hover {
+    font-size: 2em;
+    text-decoration: underline rgba(185, 185, 185, 0);
+}
+header a:active {
+    font-size: 5em;
+    color: transparent;
+    text-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+}
