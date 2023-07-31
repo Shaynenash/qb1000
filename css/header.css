@@ -10,6 +10,7 @@ header a {
     transition: 1s ease;
     text-decoration: underline rgba(185, 185, 185,.5);
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
 }
 header a:hover {
     font-size: 2em;
@@ -19,4 +20,5 @@ header a:active {
     font-size: 5em;
     color: transparent;
     text-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    
 }
